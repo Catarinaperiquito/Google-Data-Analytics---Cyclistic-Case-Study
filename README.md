@@ -1,7 +1,7 @@
 # **The Cyclistic Case Study - Google Data Analytics Capstone**
 ---
-author: "Catarina Periquito"
-date: "2023-01-16"
+### Author: Catarina Periquito
+### date: 2023-01-16
 ---
 
 ![](https://miro.medium.com/max/586/0*X1O2EZvkAkyX9PWf.webp)
