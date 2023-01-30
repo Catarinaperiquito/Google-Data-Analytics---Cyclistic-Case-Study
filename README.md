@@ -233,6 +233,7 @@ Even though we have more usage from members we still have a lot activity from ca
 rides_month <- sqldf("select member_casual, month, count (distinct ride_id) from all_trips 
 group by member_casual, month")
 ```
+![](Captura ride_month.png)
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
@@ -241,6 +242,7 @@ We can see by the results that both type of customers are more active during the
 ```{r}
 rides_bike <- sqldf("select member_casual, bike_type, count (distinct ride_id) from all_trips group by member_casual, bike_type ")
 ```
+
 
 Both groups prefer to ride in classic bikes, which doen't show much diffence between the two groups. 
 However only casual riders use docked bikes. This might indicate that this type of customers don't care about their starting and ending point. This evidence points, again, to the idea of casual users being tourists.
