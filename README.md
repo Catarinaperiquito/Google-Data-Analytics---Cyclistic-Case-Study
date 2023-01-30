@@ -98,18 +98,18 @@ library(lubridate)
 * Step 3 - Import data using use the `read_csv()` function
 
 ```{r}
-cyclistic_01 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202201-divvy-tripdata.csv")
-cyclistic_02 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202202-divvy-tripdata.csv")
-cyclistic_03 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202203-divvy-tripdata.csv")
-cyclistic_04 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202204-divvy-tripdata.csv")
-cyclistic_05 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202205-divvy-tripdata.csv")
-cyclistic_06 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202206-divvy-tripdata.csv")
-cyclistic_07 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202207-divvy-tripdata.csv")
-cyclistic_08 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202208-divvy-tripdata.csv")
-cyclistic_09 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202209-divvy-publictripdata.csv")
-cyclistic_10 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202210-divvy-tripdata.csv")
-cyclistic_11 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202211-divvy-tripdata.csv")
-cyclistic_12 <- read_csv("C:/Users/Asus/Documents/Case Study - Google Data Analytics Capstone/202212-divvy-tripdata.csv")
+cyclistic_01 <- read_csv("202201-divvy-tripdata.csv")
+cyclistic_02 <- read_csv("202202-divvy-tripdata.csv")
+cyclistic_03 <- read_csv("202203-divvy-tripdata.csv")
+cyclistic_04 <- read_csv("202204-divvy-tripdata.csv")
+cyclistic_05 <- read_csv("202205-divvy-tripdata.csv")
+cyclistic_06 <- read_csv("202206-divvy-tripdata.csv")
+cyclistic_07 <- read_csv("202207-divvy-tripdata.csv")
+cyclistic_08 <- read_csv("202208-divvy-tripdata.csv")
+cyclistic_09 <- read_csv("202209-divvy-publictripdata.csv")
+cyclistic_10 <- read_csv("202210-divvy-tripdata.csv")
+cyclistic_11 <- read_csv("202211-divvy-tripdata.csv")
+cyclistic_12 <- read_csv("202212-divvy-tripdata.csv")
 
 ```
 
