@@ -65,7 +65,6 @@ and initiatives to promote the bike-share program. These may include email, soci
 
 ## 2.2 Data credibility:
 The **ROCCC** method which stands for **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited, will be used to determine the credibility and integrity of the data source provided.
-
 	+ The data we are working on is **first-party type**: data collected and used by Cyclistic. 
 	+ The data integrity was checked and deemed unbiased.
 
@@ -229,6 +228,7 @@ group by member_casual")
 the data shows that we have more rides from annual members (59,03%) than casual users(40.9%) in 2022.
 Even though we have more usage from members we still have a lot activity from casual users. More analysis is needed.
 
+
 ### **Is the number of rides seasonable?**
 
 ```{r}
@@ -238,6 +238,7 @@ group by member_casual, month")
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20ride_month.png)
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
+
 
 ### **Do members and casual users have different bike type preferences?**
 
@@ -318,3 +319,6 @@ station_users <-  sqldf("select start_station_name, member_casual, count(ride_id
 **Membership Referral campaign**
 * To increase the membership base the company might consider a compaign giving additional benefits or discounts to the existing members with a referral program. 
 * Specially during spring and summer.
+
+# **Presentation**
+
