@@ -1,11 +1,7 @@
-# Google-Data-Analytics---Cyclistic-Case-Study
+# **The Cyclistic Case Study - Google Data Analytics Capstone**
 ---
-title: "The Cyclistic Case Study - Google Data Analytics Capstone"
 author: "Catarina Periquito"
 date: "2023-01-16"
-output:
-  pdf_document: default
-  html_document: default
 ---
 
 ![](https://miro.medium.com/max/586/0*X1O2EZvkAkyX9PWf.webp)
@@ -69,6 +65,7 @@ and initiatives to promote the bike-share program. These may include email, soci
 
 ## 2.2 Data credibility:
 The **ROCCC** method which stands for **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited, will be used to determine the credibility and integrity of the data source provided.
+
 	+ The data we are working on is **first-party type**: data collected and used by Cyclistic. 
 	+ The data integrity was checked and deemed unbiased.
 
