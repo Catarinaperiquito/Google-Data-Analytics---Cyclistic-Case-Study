@@ -148,14 +148,14 @@ all_trips_raw1 <-all_trips_raw1 %>%
 ```
 
 
-###remove the latitute and longitude fields
+### remove the latitute and longitude fields
 
 ```{r}
 all_trips_raw <- all_trips_raw1 %>%
   select(-c(start_lat, start_lng, end_lat, end_lng))
 ```
 
-###confirm final columns of dataset
+### confirm final columns of dataset
 
 ```{r}
 colnames(all_trips_raw)
@@ -169,7 +169,7 @@ all_trips_raw <- all_trips_raw [!duplicated(all_trips_raw), ]
 
 the variable ride_id has no duplicates, it is also a primary key. Each Id has 16 characters and each row represents a unique bike ride. It's important to understand if ride_id is the user id or if a new ride generates a new ride id.
 
-###add columns for date, day of the week and month 
+### Add columns for date, day of the week and month 
 
 ```{r}
 all_trips_raw$date <- as.Date(all_trips_raw$start_time) 
@@ -178,7 +178,7 @@ all_trips_raw$month <- format(as.Date(all_trips_raw$date), "%B")
 all_trips_raw$hour <- hour(all_trips_raw$start_time)
 ```
 
-#add calculated field for ride_length in minutes
+### Add calculated field for ride_length in minutes
 
 ```{r}
 all_trips_raw<-all_trips_raw %>%
@@ -193,14 +193,14 @@ all_trips <- na.omit(all_trips_raw)
 ```
 
 
-###confirm final dataset
+### Confirm final dataset
 
 ```{r}
 head(all_trips)
 ```
 
-
-##**Analyse/share**
+ 
+## **Analyse/share**
 ***
 To analyse my dataframe I'm combining R programming language with SQL and create data visualization using Tableau. 
 
@@ -211,7 +211,7 @@ library(sqldf)
 
 So fist we want to know how many annual members vs casual users we have. What can we tell from the findings?
 
-Is Rider_id the user id or is it the id of a new ride?
+### *Is Rider_id the user id or is it the id of a new ride?*
 
 ```{r}
 ride_user <- sqldf("select count (distinct ride_id), count (ride_id) from all_trips ")
@@ -220,7 +220,7 @@ ride_user <- sqldf("select count (distinct ride_id), count (ride_id) from all_tr
 The number of unique ride_id (4369052) is the same as the count of all ride_id (4369052), which means that ride_id can never be a user identifier. If it was each member only used this service once a year.
  
 
-* How many casual vs membership rides take place?
+### **How many casual vs membership rides take place?**
 
 ```{r}
 members_vs_casual <- sqldf("select member_casual, count (distinct ride_id) from all_trips 
@@ -231,7 +231,7 @@ group by member_casual")
 the data shows that we have more rides from annual members (59,03%) than casual users(40.9%) in 2022.
 Even though we have more usage from members we still have a lot activity from casual users. More analysis is needed.
 
-Is the number of rides seasonable?
+### **Is the number of rides seasonable?**
 
 ```{r}
 rides_month <- sqldf("select member_casual, month, count (distinct ride_id) from all_trips 
@@ -240,7 +240,7 @@ group by member_casual, month")
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
-* Do members and casual users have different bike type preferences?
+### **Do members and casual users have different bike type preferences?**
 
 ```{r}
 rides_bike <- sqldf("select member_casual, bike_type, count (distinct ride_id) from all_trips group by member_casual, bike_type ")
@@ -249,7 +249,10 @@ rides_bike <- sqldf("select member_casual, bike_type, count (distinct ride_id) f
 Both groups prefer to ride in classic bikes, which doen't show much diffence between the two groups. 
 However only casual riders use docked bikes. This might indicate that this type of customers don't care about their starting and ending point. This evidence points, again, to the idea of casual users being tourists.
 In the other hand Members don't go for docked bikes because they want the freedom to park their bikes when they go to work.
- 
+
+
+### **What is the duration of each user type rides? Does it vary per week day or month?**
+
 * Calculations with ride_length
 
 ```{r}
@@ -261,7 +264,6 @@ min(all_trips$ride_length)
 Right away I spotted something interesting in the max ride length. After some analysis I decided to leave this data in the dataset. It means that a customer had the bike for more than one day. 
 
 
-* What is the duration of each user type rides? Does it vary per week day or month? 
 ```{r}
 Ride_time <- sqldf("select month, weekday, member_casual, avg(ride_length) from all_trips 
 group by month, weekday, member_casual")
@@ -270,7 +272,7 @@ group by month, weekday, member_casual")
 Casual users ride longer than members. This can mean that their is no limit time for casual customers or they have more money to spend, maybe tourists. Also Cyclistic doesn't have a pricing limit per ride. they might be losing annual memberships because of the full-day passes.
 Members have a more consistent rides throughout week and month, with a slight increase during the weekend and warmer months, during these times they might have more free time.
 
-* When do different users ride throughout the day? and week?
+### **When do different users ride throughout the day? and week?**
 
 ```{r}
 rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id) from all_trips group by member_casual, hour, weekday")
@@ -278,7 +280,7 @@ rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id)
 
 Annual members use Cyclistic mostly to commute to work or during rush hours and during lunch time. Casual riders use this service more sporadically, but mostly from 10-19h. 
 
-* Where does each type of user start and end their trip?
+### **Where does each type of user start and end their trip?**
 
 ```{r}
 station_users <-  sqldf("select start_station_name, member_casual, count(ride_id) from all_trips group by  start_station_name, member_casual")
