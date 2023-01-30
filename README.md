@@ -129,13 +129,13 @@ In order to process the data I also used the R programing language.
 * Removed trips that had zero or negative time in the ride lenght column as I assumed they were incorrect
 * In the above transformations, I removed almost 1.3 million rows to be left with a clean combined table with 4.369.052 rows.
 
-### Combining and Modifying data
+#### Combining and Modifying data
 
 ```{r}
 all_trips_raw1 <- rbind(cyclistic_01, cyclistic_02, cyclistic_03, cyclistic_04, cyclistic_05, cyclistic_06, cyclistic_07, cyclistic_08, cyclistic_09, cyclistic_10, cyclistic_11, cyclistic_12)
 ```
 
-### Changing columns name to be more legible
+#### Changing columns name to be more legible
 ```{r}
 all_trips_raw1 <-all_trips_raw1 %>% 
                   rename(bike_type=rideable_type,
@@ -144,20 +144,20 @@ all_trips_raw1 <-all_trips_raw1 %>%
 ```
 
 
-### remove the latitute and longitude fields
+#### Remove the latitute and longitude fields
 
 ```{r}
 all_trips_raw <- all_trips_raw1 %>%
   select(-c(start_lat, start_lng, end_lat, end_lng))
 ```
 
-### confirm final columns of dataset
+#### Confirm final columns of dataset
 
 ```{r}
 colnames(all_trips_raw)
 ```
 
-### Data Cleaning 
+#### Data Cleaning 
 
 ```{r}
 all_trips_raw <- all_trips_raw [!duplicated(all_trips_raw), ] 
@@ -165,7 +165,7 @@ all_trips_raw <- all_trips_raw [!duplicated(all_trips_raw), ]
 
 the variable ride_id has no duplicates, it is also a primary key. Each Id has 16 characters and each row represents a unique bike ride. It's important to understand if ride_id is the user id or if a new ride generates a new ride id.
 
-### Add columns for date, day of the week and month 
+#### Adding columns for date, day of the week, month and time
 
 ```{r}
 all_trips_raw$date <- as.Date(all_trips_raw$start_time) 
@@ -174,7 +174,7 @@ all_trips_raw$month <- format(as.Date(all_trips_raw$date), "%B")
 all_trips_raw$hour <- hour(all_trips_raw$start_time)
 ```
 
-### Add calculated field for ride_length in minutes
+#### Add calculated field for ride_length in minutes
 
 ```{r}
 all_trips_raw<-all_trips_raw %>%
@@ -189,7 +189,7 @@ all_trips <- na.omit(all_trips_raw)
 ```
 
 
-### Confirm final dataset
+#### Confirm final dataset
 
 ```{r}
 head(all_trips)
