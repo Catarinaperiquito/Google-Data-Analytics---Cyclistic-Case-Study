@@ -321,5 +321,6 @@ station_users <-  sqldf("select start_station_name, member_casual, count(ride_id
 * Specially during spring and summer.
 
 # **Presentation**
+***
 
 [Click here](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/The%20Cyclistic%20Case%20Study%20(1).pdf)
