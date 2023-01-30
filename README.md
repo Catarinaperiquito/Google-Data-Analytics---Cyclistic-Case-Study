@@ -64,9 +64,9 @@ and initiatives to promote the bike-share program. These may include email, soci
   + Since this is a public data or open source information, we can use this for the capstone project
 
 ## 2.2 Data credibility:
-The **ROCCC** method which stands for **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited, will be used to determine the credibility and integrity of the data source provided.
-	* The data we are working on is **first-party type**: data collected and used by Cyclistic. 
-	* The data integrity was checked and deemed unbiased.
+* The **ROCCC** method which stands for **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited, will be used to determine the credibility and integrity of the data source provided.
+	+ The data we are working on is **first-party type**: data collected and used by Cyclistic. 
+	+ The data integrity was checked and deemed unbiased.
 
 ## 2.3 Dataset analysed:
 The Cyclistic’s dataset has the historical trip data from 2022, separeted in csv. files to analyze and identify trends. 
