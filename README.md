@@ -208,7 +208,7 @@ library(sqldf)
 
 So fist we want to know how many annual members vs casual users we have. What can we tell from the findings?
 
-### *Is Rider_id the user id or is it the id of a new ride?*
+### Is Rider_id the user id or is it the id of a new ride?
 
 ```{r}
 ride_user <- sqldf("select count (distinct ride_id), count (ride_id) from all_trips ")
@@ -224,7 +224,7 @@ members_vs_casual <- sqldf("select member_casual, count (distinct ride_id) from 
 group by member_casual")
 
 ```
-
+![]("C:\Users\Asus\Documents\Case Study - Google Data Analytics Capstone\ride_user\Captura member_ride.png")
 the data shows that we have more rides from annual members (59,03%) than casual users(40.9%) in 2022.
 Even though we have more usage from members we still have a lot activity from casual users. More analysis is needed.
 
