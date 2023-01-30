@@ -65,7 +65,7 @@ and initiatives to promote the bike-share program. These may include email, soci
 
 ## 2.2 Data credibility:
 The **ROCCC** method which stands for **R**eliable, **O**riginal, **C**omprehensive, **C**urrent, and **C**ited, will be used to determine the credibility and integrity of the data source provided.
-	*The data we are working on is **first-party type**: data collected and used by Cyclistic. 
+	* The data we are working on is **first-party type**: data collected and used by Cyclistic. 
 	* The data integrity was checked and deemed unbiased.
 
 ## 2.3 Dataset analysed:
