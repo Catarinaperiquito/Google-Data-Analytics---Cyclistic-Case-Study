@@ -233,7 +233,7 @@ Even though we have more usage from members we still have a lot activity from ca
 rides_month <- sqldf("select member_casual, month, count (distinct ride_id) from all_trips 
 group by member_casual, month")
 ```
-![](Captura ride_month.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20ride_month.png)
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
