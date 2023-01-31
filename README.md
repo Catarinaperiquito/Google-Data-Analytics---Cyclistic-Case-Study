@@ -163,7 +163,7 @@ colnames(all_trips_raw)
 all_trips_raw <- all_trips_raw [!duplicated(all_trips_raw), ] 
 ```
 
-the variable ride_id has no duplicates, it is also a primary key. Each Id has 16 characters and each row represents a unique bike ride. It's important to understand if ride_id is the user id or if a new ride generates a new ride id.
+The variable ride_id has no duplicates, it is also a primary key. Each Id has 16 characters and each row represents a unique bike ride. It's important to understand if ride_id is the user id or if a new ride generates a new ride id.
 
 #### Adding columns for date, day of the week, month and time
 
