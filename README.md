@@ -18,7 +18,7 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 
 # **Scenario**
 ***
-The Cyclistic Case Study is one of the capstone projects of Google Data Analytics, a professional certificate program offered on Coursera. 
+The Cyclistic Case Study is one of the [capstone projects of Google Data Analytics](chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://d3c33hcgiwev3.cloudfront.net/aacF81H_TsWnBfNR_x7FIg_36299b28fa0c4a5aba836111daad12f1_DAC8-Case-Study-1.pdf?Expires=1675296000&Signature=Aq7Cc7wfqpt6Q47oBQSO~hZ-smzffCGQxnb8upGfrMHMYZpqDLyboUFMUTuW8H9k3Ml2DPPBbsmOr-pCq4YQhkVHu2AYi0ed8i5k5-4X7hoRFqgGcKj7YGfEbFjkq8AN3LEJ-EIILZlcqKdaa34xR-xkT1v13f6P0ELsS6t3wRA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A), a professional certificate program offered on Coursera. 
 I roleplayed as a data analyst working on the marketing analyst team at Cyclistic. 
 Lily Moreno, The director of marketing and my manager assigned me to explore the behavior of casual riders and annual members to understand how they use Cyclistic bikes differently. 
 
