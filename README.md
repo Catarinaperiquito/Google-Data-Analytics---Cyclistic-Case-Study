@@ -269,7 +269,7 @@ median(all_trips$ride_length)
 max(all_trips$ride_length)
 min(all_trips$ride_length)
 ```
-Right away I spotted something interesting in the max ride length. It seems that we have some outliers with trips of more than 24 hours (1440 min)  After some analysis I decided to leave this data in the dataset. The starting and ending ride time were in different days, which means that a customer had the bike for more than one day.  
+Right away I spotted something interesting in the max ride length. It seems that we have some outliers with trips of more than 24 hours (1440 min).  After some analysis I decided to leave this data in the dataset. The starting and ending ride time were in different days, which means that a customer had the bike for more than one day.  
 
 ```{r}
 Ride_time <- sqldf("select month, weekday, member_casual, avg(ride_length) from all_trips 
