@@ -235,7 +235,7 @@ Even though we have more usage from members we still have a lot activity from ca
 rides_month <- sqldf("select member_casual, month, count (distinct ride_id) from all_trips 
 group by member_casual, month")
 ```
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_month1.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_month2.png)
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
@@ -272,6 +272,7 @@ group by month, weekday, member_casual")
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_week1.png)
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_month1.png)
+
 Casual users ride longer than members. This can mean that their is no limit time for casual customers or they have more money to spend, maybe tourists. Also Cyclistic doesn't have a pricing limit per ride. they might be losing annual memberships because of the full-day passes.
 Members have a more consistent rides throughout week and month, with a slight increase during the weekend and warmer months, during these times they might have more free time.
 
