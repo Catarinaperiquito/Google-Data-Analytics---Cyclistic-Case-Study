@@ -275,7 +275,7 @@ Right away I spotted something interesting in the max ride length. It seems that
 Ride_time <- sqldf("select month, weekday, member_casual, avg(ride_length) from all_trips 
 group by month, weekday, member_casual")
 ```
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Painel%201%20(2).png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_time.png)
 
 Casual users ride longer than members. This can mean that if there is a price per minute, casual users spend more on their rides, maybe tourists. Also casual users have access to full-day passes. These  passes might be discouraging new annual memberships and  or preventing potential revenue from single rides passes
 
