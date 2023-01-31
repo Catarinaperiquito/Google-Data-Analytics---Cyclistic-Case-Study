@@ -317,13 +317,13 @@ When looking at the ending station there isn't much different between customers.
  
 * More than half (59,76%) of rides are made by Cyclistic annual members. 
 
-* The average ride time for members is considerably lower than casual riders, which seems to indicate that members use Cyclistic bikes for different purposes comparing to casual riders
+* The average ride time for members is considerably lower than casual riders, which seems to indicate that members use Cyclistic bikes for different purposes comparing to casual riders. Due to this, there may be opportunities to review the company pricing plan and passes for casual users.
 
 * The members are probably locals who use the bikes daily  to commute to and from their workplaces, while casual customers are most likely tourists and use the bikes for leisure and sightseeing around Chicago.
 
 * Cyclistic can try to build a campaign to turn casual customers to members, especially during spring and summer but it will most likely be difficult, since they have such diferent purposes.
 
-* The amount of casual rides (more then 1.7 million) is still considerable, and we might have some oportunities to convert them to members.
+* The amount of casual rides (more then 1.7 million) is still considerable, and we might have some oportunities to convert them to members to get more value.
 
 
 # **Suggestions and recommendations**
