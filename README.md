@@ -279,7 +279,7 @@ group by month, weekday, member_casual")
 
 Casual users ride longer than members. This can mean that if there is a price per minute, casual users spend more on their rides. Also casual users have access to full-day passes. It would be interesting to look further into this: daily passes might be discouraging new annual memberships and or preventing potential revenue from single rides passes.
 
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_month1.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_week1.png)
 
 Members have a more consistent rides throughout week, with a slight increase during the weekend, during these times they might have more free time. Again this reinforces the idea that members may be communting to work.
 
