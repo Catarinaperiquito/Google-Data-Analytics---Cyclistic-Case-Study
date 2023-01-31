@@ -219,6 +219,9 @@ The number of unique ride_id (4369052) is the same as the count of all ride_id (
 
 ### **How many casual vs membership rides take place?**
 
+Cyclistic destinguish customers on their price plan. Those who purchase single-ride or full-day passes are referred to as casual riders. Customers
+who purchase annual memberships are Cyclistic members. 
+
 ```{r}
 members_vs_casual <- sqldf("select member_casual, count (distinct ride_id) from all_trips 
 group by member_casual")
@@ -241,6 +244,8 @@ group by member_casual, month")
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
 ### **When do different users ride throughout the day? and week?**
+
+To explore more the if there was a difference between this two customer groups I decided to analyse their ride behavior throughout the day and week.
 
 ```{r}
 rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id) from all_trips group by member_casual, hour, weekday")
@@ -280,6 +285,8 @@ Members have a more consistent rides throughout week and month, with a slight in
 
 ### **Do members and casual users have different bike type preferences?**
 
+We know that Cyclistic offer more than 5,800 bicycles and 600 docking station. It would be interesting to know if customers have a bike preference.
+
 ```{r}
 rides_bike <- sqldf("select member_casual, bike_type, count (distinct ride_id) from all_trips group by member_casual, bike_type ")
 ```
@@ -291,6 +298,8 @@ However only casual riders use docked bikes. This might indicate that this type 
 In the other hand Members don't go for docked bikes because they want the freedom to park their bikes when they go to work.
 
 ### **Where does each type of user start and end their trip?**
+
+Since Cyclistic has a network of 692 stations across Chicago, I decided to further analysis on customers ride differences in starting and ending point. 
 
 ```{r}
 station_users <-  sqldf("select start_station_name, member_casual, count(ride_id) from all_trips group by  start_station_name, member_casual")
