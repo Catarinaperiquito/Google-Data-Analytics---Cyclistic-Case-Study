@@ -252,7 +252,7 @@ rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id)
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/data%20viz%20-%20histogram%20(2).png)
 
-Frpm the visualization it seems that Annual members ride during during rush hours. This means that they  may be mainly using Cyclistic to commuting to work. Casual riders use this service more sporadically, but mostly from 10-19h.
+From the visualization it seems that annual members ride during during rush hours. This means that they  may be mainly using Cyclistic to commuting to work. Casual riders use this service more sporadically, but mostly from 10-19h.
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_week%201.png)
  
@@ -277,7 +277,7 @@ group by month, weekday, member_casual")
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_time.png)
 
-Casual users ride longer than members. This can mean that if there is a price per minute, casual users spend more on their rides, maybe tourists. Also casual users have access to full-day passes. These  passes might be discouraging new annual memberships and  or preventing potential revenue from single rides passes
+Casual users ride longer than members. This can mean that if there is a price per minute, casual users spend more on their rides. Also casual users have access to full-day passes. These  passes might be discouraging new annual memberships and  or preventing potential revenue from single rides passes
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_month1.png)
 
