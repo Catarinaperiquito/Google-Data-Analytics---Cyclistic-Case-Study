@@ -328,4 +328,4 @@ When looking at the ending station there isn't much different between customers.
 
 # **Presentation**
 ***
-[Click here](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/The%20Cyclistic%20Case%20Study%20(1).pdf)
+[Click here](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/The%20Cyclistic%20Case%20Study%20(3).pdf)
