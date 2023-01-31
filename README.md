@@ -252,11 +252,11 @@ rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id)
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/data%20viz%20-%20histogram%20(2).png)
 
-By the data visualization it seems that annual members use Cyclistic mostly to commute to work or during rush hours and during lunch time. Casual riders use this service more sporadically, but mostly from 10-19h.
+By the data visualization it seems that Annual members ride during during rush hours. This means that they  may be mainly using Cyclistic to commuting to work. Casual riders use this service more sporadically, but mostly from 10-19h.
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_week%201.png)
  
- Once again the assumption that annual members use Cyclistic services to ride to work is even more clear. They use it especially from monday to friday which are normal work days. In the other hand casual users ride are more active during the weekend. And during saturday rides almost double meaning that casual customers use this service especially during freetime and for leisure purposes.
+Once again the assumption that annual members use Cyclistic services to ride to work is even more clear. They ride especially from monday to friday which are normal work days. In the other hand casual users are more active during the weekend. Also during saturday, casual rides almost double meaning that customers use this service especially during freetime and for leisure purposes.
 
 
 ### **What is the duration of each user type rides? Does it vary per week day or month?**
@@ -279,8 +279,8 @@ group by month, weekday, member_casual")
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_month1.png)
 
-Casual users ride longer than members. This can mean that their is no limit time for casual customers or they have more money to spend, maybe tourists. Also Cyclistic doesn't have a pricing limit per ride. they might be losing annual memberships because of the full-day passes.
-Members have a more consistent rides throughout week and month, with a slight increase during the weekend and warmer months, during these times they might have more free time.
+Casual users ride longer than members. This can mean that if there is a price per minute, casual users spend more on their rides, maybe tourists. Also casual users have access to full-day passes. These  passes might be discouraging new annual memberships and  or preventing potential revenue from single rides passes
+Members have a more consistent rides throughout week, with a slight increase during the weekend, during these times they might have more free time. Again this reinforces the idea that members may be communting to work
 
 
 ### **Do members and casual users have different bike type preferences?**
@@ -322,7 +322,7 @@ When looking at the ending station there isn't much different between customers.
 
 * Cyclistic can try to build a campaign to turn casual customers to members, especially during spring and summer but it will most likely be difficult, since they have such diferent purposes.
 
-* The amount of casual rides (more then 1.7 million) is still considerable, and we might have some oportunities to convert them to members
+* The amount of casual rides (more then 1.7 million) is still considerable, and we might have some oportunities to convert them to members.
 
 
 # **Suggestions and recommendations**
@@ -330,12 +330,12 @@ When looking at the ending station there isn't much different between customers.
 
 * **Change pricing plans** :
 	+ Cyclistic doesn't have a pricing limit per ride duration. they might be losing new annual memberships because of the full-day passes. 
-	+ Maybe creating a weekend membership can allow casual riders to became members to allow Cyclistic getting more value from them
+	+ Maybe creating a weekend membership can allow casual riders to became members. This would allow Cyclistic getting more value from their customers.
 
 * **Membership Referral campaign**
 	+ To increase the membership base the company might consider a compaign giving additional benefits or discounts to the existing members with a referral program. 
 	+ Specially during spring and summer.
-
+	
 # **Presentation**
 ***
 [Click here](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/The%20Cyclistic%20Case%20Study%20(3).pdf)
