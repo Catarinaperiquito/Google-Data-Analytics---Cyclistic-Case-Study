@@ -294,7 +294,8 @@ station_users <-  sqldf("select start_station_name, member_casual, count(ride_id
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/data%20viz%20-%20stat_end_station%20(2).png)
 
-When analysing the start and end station, we can see throw the data visualization that casual riders tent to keep more downtown than annual members. In contrast we can view that members start farder from downtown end finish their rides mostly there.
+When analysing the start station, we can see through the charts that casual riders tend to start their trips more frequently downtown than annual members. In contrast, we can observe that members start their trips further from downtown. 
+When looking at the ending station there isn't much different between customers.  Both tend to end their rides closer to downtown. 
 
 # **Conclusion**
 ***
