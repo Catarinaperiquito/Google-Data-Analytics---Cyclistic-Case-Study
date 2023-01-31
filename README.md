@@ -252,7 +252,7 @@ rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id)
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/data%20viz%20-%20histogram%20(2).png)
 
-By the data visualization it seems that Annual members ride during during rush hours. This means that they  may be mainly using Cyclistic to commuting to work. Casual riders use this service more sporadically, but mostly from 10-19h.
+Frpm the visualization it seems that Annual members ride during during rush hours. This means that they  may be mainly using Cyclistic to commuting to work. Casual riders use this service more sporadically, but mostly from 10-19h.
 
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_week%201.png)
  
