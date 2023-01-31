@@ -292,7 +292,9 @@ In the other hand Members don't go for docked bikes because they want the freedo
 ```{r}
 station_users <-  sqldf("select start_station_name, member_casual, count(ride_id) from all_trips group by  start_station_name, member_casual")
 ```
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/data%20viz%20-%20stat_end_station.png)
 
+When analysing the start and end station, we can see throw the data visualization that casual riders tent to keep more downtown than annual members. In contrast we can view that members start farder from downtown end finish their rides mostly there.
 
 # **Conclusion**
 ***
