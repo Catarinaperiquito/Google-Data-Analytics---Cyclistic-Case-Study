@@ -318,13 +318,13 @@ When looking at the ending station there isn't much different between customers.
 # **Suggestions and recommendations**
 ***
 
-**Change pricing plans** :
-* Cyclistic doesn't have a pricing limit per ride duration. they might be losing new annual memberships because of the full-day passes. 
-* Maybe creating a weekend membership can allow casual riders to became members to allow Cyclistic getting more value from them
+* **Change pricing plans** :
++ Cyclistic doesn't have a pricing limit per ride duration. they might be losing new annual memberships because of the full-day passes. 
++ Maybe creating a weekend membership can allow casual riders to became members to allow Cyclistic getting more value from them
 
-**Membership Referral campaign**
-* To increase the membership base the company might consider a compaign giving additional benefits or discounts to the existing members with a referral program. 
-* Specially during spring and summer.
+* **Membership Referral campaign**
++ To increase the membership base the company might consider a compaign giving additional benefits or discounts to the existing members with a referral program. 
++ Specially during spring and summer.
 
 # **Presentation**
 ***
