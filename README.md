@@ -15,6 +15,7 @@ There are two types of customers: annual members and casual customers.
 They have a flexibility pricing plans: single-ride passes, full-day passes, and annual memberships.
 Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders.
 
+
 # **Scenario**
 ***
 The Cyclistic Case Study is one of the capstone projects of Google Data Analytics, a professional certificate program offered on Coursera. 
