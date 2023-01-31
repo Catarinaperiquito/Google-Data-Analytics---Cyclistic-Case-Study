@@ -235,9 +235,22 @@ Even though we have more usage from members we still have a lot activity from ca
 rides_month <- sqldf("select member_casual, month, count (distinct ride_id) from all_trips 
 group by member_casual, month")
 ```
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20ride_month.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_month1.png)
 
 We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
+
+### **When do different users ride throughout the day? and week?**
+
+```{r}
+rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id) from all_trips group by member_casual, hour, weekday")
+```
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/data%20viz%20-%20histogram%20(2).png)
+
+By the data visualization it seems that annual members use Cyclistic mostly to commute to work or during rush hours and during lunch time. Casual riders use this service more sporadically, but mostly from 10-19h.
+
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_week%201.png)
+ 
+ Once again the assumption that annual members use Cyclistic services to ride to work is even more clear. They use it especially from monday to friday which are normal work days. In the other hand casual users ride are more active during the weekend. And during saturday rides almost double meaning that casual customers use this service especially during freetime and for leisure purposes.
 
 
 ### **What is the duration of each user type rides? Does it vary per week day or month?**
@@ -256,24 +269,12 @@ Right away I spotted something interesting in the max ride length. It seems that
 Ride_time <- sqldf("select month, weekday, member_casual, avg(ride_length) from all_trips 
 group by month, weekday, member_casual")
 ```
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20Ride_time_week.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_week1.png)
 
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20Ride_time_month.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20Ride_time_month1.png)
 Casual users ride longer than members. This can mean that their is no limit time for casual customers or they have more money to spend, maybe tourists. Also Cyclistic doesn't have a pricing limit per ride. they might be losing annual memberships because of the full-day passes.
 Members have a more consistent rides throughout week and month, with a slight increase during the weekend and warmer months, during these times they might have more free time.
 
-### **When do different users ride throughout the day? and week?**
-
-```{r}
-rides_day <- sqldf("select member_casual, hour, weekday, count(distinct ride_id) from all_trips group by member_casual, hour, weekday")
-```
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/data%20viz%20-%20histogram%20(2).png)
-
-By the data visualization it seems that annual members use Cyclistic mostly to commute to work or during rush hours and during lunch time. Casual riders use this service more sporadically, but mostly from 10-19h.
-
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20rides_week.png)
- 
- Once again the assumption that annual members use Cyclistic services to ride to work is even more clear. They use it especially from monday to friday which are normal work days. In the other hand casual users ride are more active during the weekend. And during saturday rides almost double meaning that casual customers use this service especially during freetime and for leisure purposes.
 
 ### **Do members and casual users have different bike type preferences?**
 
@@ -281,7 +282,7 @@ By the data visualization it seems that annual members use Cyclistic mostly to c
 rides_bike <- sqldf("select member_casual, bike_type, count (distinct ride_id) from all_trips group by member_casual, bike_type ")
 ```
 
-![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_bike.png)
+![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20rides_bike1.png)
 
 Both groups prefer to ride in classic bikes, which doen't show much diffence between the two groups. 
 However only casual riders use docked bikes. This might indicate that this type of customers don't care about their starting and ending point. This evidence points, again, to the idea of casual users being tourists.
