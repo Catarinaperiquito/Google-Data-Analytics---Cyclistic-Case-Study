@@ -241,7 +241,7 @@ group by member_casual, month")
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/main/Captura%20ride_month2.png)
 
-We can see by the results that both type of customers are more active during the warmer month. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
+We can see by the results that both type of customers are more active during the warmer months. So this is not a distinguishable factor. Nonetheless it is clear that casual users ride more than member during spring and summer. This way we can conclude that seasons affect the amount of membership rides. 
 
 ### **When do different users ride throughout the day? and week?**
 
@@ -259,7 +259,7 @@ By the data visualization it seems that Annual members ride during during rush h
 Once again the assumption that annual members use Cyclistic services to ride to work is even more clear. They ride especially from monday to friday which are normal work days. In the other hand casual users are more active during the weekend. Also during saturday, casual rides almost double meaning that customers use this service especially during freetime and for leisure purposes.
 
 
-### **What is the duration of each user type rides? Does it vary per week day or month?**
+### **What is the duration of each user type rides? Does it vary per week day?**
 
 * Calculations with ride_length
 
