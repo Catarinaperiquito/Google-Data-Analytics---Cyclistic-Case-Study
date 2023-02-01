@@ -229,7 +229,7 @@ group by member_casual")
 ```
 ![](https://github.com/Catarinaperiquito/Google-Data-Analytics---Cyclistic-Case-Study/blob/16a7d9b74bc6a8e570ca31f594a8a7dc6a2d6e05/Captura%20member_ride.png)
 
-the data shows that we have more rides from annual members (59,03%) than casual users(40.9%) in 2022.
+The data shows that we have more rides from annual members (59,03%) than casual users(40.9%) in 2022.
 Even though we have more usage from members we still have a lot activity from casual users. More analysis is needed.
 
 
